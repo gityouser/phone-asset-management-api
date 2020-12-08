@@ -1,0 +1,26 @@
+{
+  "name": "phone-asset-management-api",
+  "version": "1.0.0",
+  "description": "phone-asset-management-ui",
+  "main": "index.js",
+  "scripts": {
+    "build": "babel src --out-dir dist",
+    "start": "node dist/index.js",
+    "restart": "rimraf dist && npm run build && npm run start",
+    "dev": "nodemon --exec npm run restart"
+  },
+  "author": "Andrei Constantinescu",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.12.9",
+    "@babel/plugin-proposal-class-properties": "^7.12.1",
+    "@babel/plugin-proposal-object-rest-spread": "^7.12.1",
+    "@babel/preset-env": "^7.12.7",
+    "babel-cli": "^6.26.0",
+    "nodemon": "^2.0.6",
+    "rimraf": "^3.0.2"
+  }
+}
