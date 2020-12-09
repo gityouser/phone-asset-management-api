@@ -12,14 +12,17 @@
   "author": "Andrei Constantinescu",
   "license": "MIT",
   "dependencies": {
-    "express": "^4.17.1"
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "mongoose": "^5.11.6"
   },
   "devDependencies": {
+    "@babel/cli": "^7.12.8",
     "@babel/core": "^7.12.9",
     "@babel/plugin-proposal-class-properties": "^7.12.1",
     "@babel/plugin-proposal-object-rest-spread": "^7.12.1",
     "@babel/preset-env": "^7.12.7",
-    "babel-cli": "^6.26.0",
     "nodemon": "^2.0.6",
     "rimraf": "^3.0.2"
   }
