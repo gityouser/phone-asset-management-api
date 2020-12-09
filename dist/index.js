@@ -1,9 +1,5 @@
-const express = require("express");
-const app = express();
+"use strict";
 
-app.get("/test", (req, res) => {
-  console.log("getting stuff with babel");
-  res.send({ message: "Hello babel test!!!!" });
-});
+var _server = require("./server");
 
-app.listen(3000, () => console.log("Listening on port 3000"));
+(0, _server.startServer)();
