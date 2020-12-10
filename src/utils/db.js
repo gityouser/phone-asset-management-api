@@ -1,6 +1,6 @@
-import mongoose from 'mongoose';
-import {dbUrl} from '../config'
+import mongoose from 'mongoose'
+import { dbUrl } from '../config'
 
 export const connect = (url = dbUrl, options = {}) => {
-  return mongoose.connect(url, {...options, userNewUrlParser: true})
+  return mongoose.connect(url, { ...options, userNewUrlParser: true })
 }
