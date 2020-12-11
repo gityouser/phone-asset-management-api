@@ -1,6 +1,6 @@
 import mongoose from 'mongoose'
 
-const assetsSchema = new mongoose.schema({
+const assetsSchema = new mongoose.Schema({
   type: {
     type: String,
     required: true,
@@ -17,4 +17,4 @@ const assetsSchema = new mongoose.schema({
   meta: { type: String },
 })
 
-export default assetsSchema
+export const Asset = mongoose.model('asset', assetsSchema)
