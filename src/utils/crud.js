@@ -31,7 +31,7 @@ export const getMany = (model) => async (req, res, next) => {
   }
 }
 
-export const getAll = (model) => async (req, res) => {
+export const getAll = (model) => async (_req, res) => {
   const docs = await model.find({}).exec()
 
   if (!docs) {
